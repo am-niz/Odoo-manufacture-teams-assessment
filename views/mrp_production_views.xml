@@ -1,0 +1,12 @@
+<odoo>
+    <record id="mrp_production_form_manufacture_team" model="ir.ui.view">
+        <field name="name">mrp.product.form.inherit.manufacture.team</field>
+        <field name="model">mrp.production</field>
+        <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='group_extra_info']/field[@name='user_id']" position="after">
+                <field name="manufacturing_team"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

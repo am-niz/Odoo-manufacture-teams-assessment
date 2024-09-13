@@ -1,0 +1,12 @@
+<odoo>
+    <template id="mrp_report_manufacture_team" inherit_id="mrp.report_mrporder">
+        <xpath expr="//div[hasclass('page')]" position="inside">
+            <div class="row mt32 mb32">
+                <div class="col-3" t-if="o.origin">
+                    <strong>Manufacture Team:</strong><br/>
+                    <span t-field="o.manufacturing_team">Team ABC</span>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_manufacturing_teams_id,access_manufacturing_teams,model_manufacturing_teams,base.group_user,1,1,1,1
+access_manufacture_team_member_id,access_manufacture_team_member,model_manufacture_team_member,base.group_user,1,1,1,1
+access_mrp_production_id,access_mrp_production,model_mrp_production,base.group_user,1,1,1,1

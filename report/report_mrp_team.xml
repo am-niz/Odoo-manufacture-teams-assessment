@@ -1,0 +1,10 @@
+<odoo>
+    <template id="mrp_report_manufacture_team" inherit_id="mrp.report_mrporder">
+        <xpath expr="//div[div[span[@t-field='o.user_id']]]" position="after">
+            <div class="col-3" t-if="o.mrp_team_id">
+                <strong>Manufacture Team:</strong><br/>
+                <span t-field="o.mrp_team_id">Team ABC</span>
+            </div>
+        </xpath>
+    </template>
+</odoo>

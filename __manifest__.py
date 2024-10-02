@@ -2,20 +2,20 @@
 {
     'name': "manufacturing_team_management",
 
-    'summary': "Short (1 phrase/line) summary of the module's purpose",
+    'summary': "Can set manufacture team with team members",
 
     'description': """
-Long description of module's purpose
+Can set manufacture team with team members
     """,
 
-    'author': "My Company",
-    'website': "https://www.yourcompany.com",
+    'author': "Amzsys",
+    'website': "http://www.amzsys.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
-    'version': '0.1',
+    'category': 'mrp',
+    'version': '1.0',
 
     # any module necessary for this one to work correctly
     'depends': ['base', 'mrp'],
@@ -23,9 +23,9 @@ Long description of module's purpose
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'views/manufacturing_teams_views.xml',
+        'views/mrp_teams_views.xml',
         'views/mrp_production_views.xml',
-        'report/report_manufacture_team.xml',
+        'report/report_mrp_team.xml',
 
     ],
     "application": True,
